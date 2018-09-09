@@ -123,6 +123,9 @@ export default {
     scroll(pos) {
       this.scrollY = pos.y
     },
+    refresh() {
+      this.$refs.listView.refresh()
+    },
     _scrollTo(index) {
       // 点击div上下的空白
       if (!index && index !== 0) {
